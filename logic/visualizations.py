@@ -1,6 +1,9 @@
+import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 import io
+
+matplotlib.use('Agg')  # Use a non-interactive backend
 
 
 def create_plot(data):
