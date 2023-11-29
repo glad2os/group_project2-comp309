@@ -13,7 +13,7 @@ app = Flask(__name__)
 def data_description():
     data = load_data()
     description = describe_data(data)
-    return description.to_json()
+    return jsonify(description)
 
 
 # b. Statistical Assessments Endpoint
